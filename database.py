@@ -48,5 +48,3 @@ def delete_expenses(expense_id):
     query.prepare("DELETE FROM expenses WHERE id = ?")
     query.addBindValue(expense_id)
     return query.exec()
-
-    
